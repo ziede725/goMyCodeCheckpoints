@@ -1,25 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import myImage from './imgsrc.png'
+import myVideo from './flappy.webm'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <div style={{border:'solid 1px black' , maxWidth:'100vw'}}></div>
+    <h1 className="title red ">My name is zied 
+    </h1>
+    <br></br>
+    <img src='/imgpublic.png'></img>
+    <br></br>
+    <br></br>
+    <img src ={myImage}></img>
+    
+    <div/>
+    <video width="500" height="400" controls>
+    <source src={myVideo} type="video/webm"/>
+    </video>
+    
+    
+    </> 
   );
 }
+
 
 export default App;
